@@ -1,0 +1,232 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Antonio', sans-serif;
+
+}  
+.main-container{
+    height: 120vh;
+    width: 98.5vw;
+    background-image: linear-gradient(to right top, #0d0339, #190a4e, #2a0b63, #3e0977, #54008b);
+    display: flex;
+    padding: 0px;
+}
+.navbar-toggler{
+    width: 100px;
+}
+.container1{
+    position: relative;
+    /* background-color: aqua; */
+    width: 90vw;
+    height: 120vh;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    padding: 0px;
+}
+.navbar-brand{
+    margin-top: 0px !important;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+nav{
+    z-index: 1;
+    padding-bottom: 20px !important;
+    width: 75vw !important;
+    /* background-color: aqua; */
+    justify-content: space-around !important;
+}
+nav img{
+    height: 75px;
+    width: 65px;
+    margin-bottom: 20px !important;
+}
+nav span{
+    width: 120px;
+    margin-right: 130px;
+    display: flex;
+    justify-content: space-between;
+}
+.back{
+    position: absolute;
+    top: 0px;
+    height: 120vh;
+    width: 80vw;
+    
+}
+nav a{
+    color: grey!important;
+}
+nav li{
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+svg{
+    text-align: center;
+    color: rgb(138, 133, 133);
+    background: rgba(126, 123, 123,0.2);
+    border-radius: 100%;
+}
+nav .wallet{
+    position: relative;
+    color: #fff;
+    height: 50px;
+    width: 130px;
+    background: rgb(54, 6, 136);
+    clip-path: polygon(0% 34.85%, 0% 27.47%, 21.13% 0%, 50.85% 0%, 88% 0%, 100% 0%, 100% 27.47%, 100% 44.5%, 100% 67.39%, 100% 74.45%, 88.55% 87.22%, 77.11% 100%, 59.1% 100%, 0% 100%, 0% 59.75%, 0% 44.5%);
+    
+    border: 3px solid rgb(54, 6, 136);
+    outline:4px solid #fff;
+    transition: all ease-in-out 0.3s;
+}
+.wallet:hover{
+    color: #54008b;
+    background: #fff;
+}
+
+.content-box{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 60vw;
+    height: 80vh;
+    /* background-color: aquamarine; */
+    z-index: 2;
+    
+}
+.content-box h1{
+    color: #fff;
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+.content-box p{
+    color: grey;
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+.content-box button{
+    height: 60px;
+    width: 140px;
+    font-size: 18px;
+}
+.content-box button:nth-child(1){
+    background: #fff;
+    color: #0d0339;    
+    border: 3px solid rgb(37, 1, 61);
+    clip-path: polygon(0% 34.85%, 0% 27.47%, 21.13% 0%, 50.85% 0%, 88% 0%, 100% 0%, 100% 27.47%, 100% 44.5%, 100% 67.39%, 100% 74.45%, 88.55% 87.22%, 77.11% 100%, 59.1% 100%, 0% 100%, 0% 59.75%, 0% 44.5%);
+    outline: 5px solid #fff;
+    margin-right: 15px;
+    transition: all ease-in-out 0.3s;
+}
+.content-box button:nth-child(1):hover{
+    color: #fff;
+    background: #2a0b63;
+}
+.content-box button:nth-child(2){
+    background: #481472;
+    color: #fff;    
+    border: double 1px rebeccapurple;
+    outline: 2px solid #fff;
+    clip-path: polygon(0% 34.85%, 0% 27.47%, 21.13% 0%, 50.85% 0%, 88% 0%, 100% 0%, 100% 27.47%, 100% 44.5%, 100% 67.39%, 100% 74.45%, 88.55% 87.22%, 77.11% 100%, 59.1% 100%, 0% 100%, 0% 59.75%, 0% 44.5%);
+    transition: all ease-in-out 0.3s;
+}
+.content-box button:nth-child(2):hover{
+    color: #54008b;
+    background: #fff;
+}
+ .content-box div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(3px);
+    height: 90px;
+    width: 100px;
+    background-color: rgba(238, 235, 230, 0.2);
+    margin-bottom: 10px;
+
+ }
+ .content-box div h1{
+    font-size: 28px;
+    z-index: 3;
+    margin: 0;
+
+ }
+ .content-box div p{
+    font-size: 20px;
+    margin: 0;
+    color: lightgray;
+ }
+ .box-1{
+    position: absolute;
+    top: 310px;
+    left: 0px;
+ }
+ .box-2{
+    position: absolute;
+    top: 380px;
+    left: 400px;
+ }
+ .box-3{
+    position: absolute;
+    top: 240px;
+    right: 0px;
+ }
+ @media(max-width:900px){
+    .container1{
+        width: 100vw;
+       
+    }
+    .back{
+        width: 100vw;
+    }
+    .content-box{
+        width: 100vw;
+    }
+    h1{
+        font-size: 40px;
+        color: #0d0339;
+    }
+ }
+ @media(max-width:600px){
+   
+    nav{
+        position: relative;
+    }
+    .main-container{
+        height: 70vh;
+    }
+    .container1{
+        height: 70vh;
+    }
+    .navbar-toggler{
+        position: absolute;
+        top: 30px;
+        left: 250px;
+    }
+    .back{
+        width: 100vw;
+        height: 80vh;
+    }
+    .content-box{
+        width: 100vw;
+    }
+    .content-box h1{
+          font-size: 35px;
+        
+    }
+    .content-box p{
+        font-size: 20px;
+    }
+   .box-2{
+    left: 200px;
+   }
+   .box-3{
+    top: 300px;
+   }
+ }
+
+
